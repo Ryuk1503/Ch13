@@ -1,8 +1,8 @@
 # Build stage - updated 2025-12-02
 FROM maven:3.9-eclipse-temurin-17 AS build
 WORKDIR /app
-COPY ch13_ex1_email/pom.xml .
-COPY ch13_ex1_email/src ./src
+COPY pom.xml .
+COPY src ./src
 RUN mvn clean package -DskipTests
 
 # Runtime stage

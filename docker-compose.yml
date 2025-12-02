@@ -16,7 +16,7 @@ services:
       - app-network
 
   app:
-    build: .
+    build: ./ch13_ex1_email
     container_name: ch13_app
     ports:
       - "8080:8080"
