@@ -1,4 +1,4 @@
-# Build stage
+# Build stage - updated 2025-12-02
 FROM maven:3.9-eclipse-temurin-17 AS build
 WORKDIR /app
 COPY ch13_ex1_email/pom.xml .
